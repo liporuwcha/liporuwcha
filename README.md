@@ -7,10 +7,10 @@
  ![rustlang](https://img.shields.io/badge/rustlang-orange)
  ![postgres](https://img.shields.io/badge/postgres-orange)
 
- ![logo](https://github.com/liporuwcha/liporuwcha/blob/main/images/logo/logo_liporuwcha.png)
+ ![logo](https://github.com/liporuwcha/liporuwcha/blob/main/images/logo/logo_liporuwcha.png)  
  liporuwcha is a "GitHub organization" that groups [multiple repositories](https://github.com/orgs/liporuwcha/repositories?q=sort%3Aname-asc) together
 
- [![Lines in md](https://img.shields.io/badge/Lines_in_markdown-83-green.svg)](https://github.com/liporuwcha/liporuwcha/)
+ [![Lines in md](https://img.shields.io/badge/Lines_in_markdown-0-green.svg)](https://github.com/liporuwcha/liporuwcha/)
  ![liporuwcha](https://bestia.dev/webpage_hit_counter/get_svg_image/000.svg)
 
 ## Motivation
@@ -19,9 +19,9 @@ I would like to code some useful small programs. It is my hobby. These programs 
 
 Programming things from zero is not viable. Maybe for educational purposes, but it is not productive at all. I need a basic framework to build programs on top of it. Frameworks are both a blessing and a curse. They are productive for the use-case they are created for, but limit the freedom to code anything different.
 
-This is not meant to be a commercial product or whatever. It is a reasonable usable and simple framework for hobby programs.
+This is not meant to be a commercial product or whatever. It is a reasonably usable and simple framework for hobby programs.
 
-Without exception, sooner or later every program needs a database. I think Postgres is a great open source database. This is the main point of my programs: get some data from the user, transform it somehow and return it to the user in a different form. 90% of that is going to work inside the database. It is not great for scalability, but that is not a problem I will ever encounter.
+Without exceptions, sooner or later every program needs a database. I think Postgres is a great open source database. This is the main point of my programs: get some data from the user, transform it somehow and return it to the user in a different form. 90% of that is going to work inside the database. It is not great for scalability, but that is not a problem I will ever encounter.
 
 The client cannot be connected directly to the database. That is a no-no. We need a web server with some middleware. I choose the Rust language and one of its library crates Axum for the web server.
 
@@ -35,7 +35,7 @@ Naming things is the major difficulty of programming. There is seldom a good nam
 
 I choose the strange unique name **"liporuwcha"** for this project. It does not mean anything. It is barely pronounceable. It is an abbreviation of the Stack Linux-Postgres-Rust-WASM-CSS3-HTML5-Axum. This will be the name of my "framework". On top of this framework it will be relatively easy to add functionality or different apps.
 
-The nature of three-tier architecture makes it difficult to use just one tool. So tooling is limited and I want to use namespaces to make code searchable through every tier. Search-all-and-replace will be most of my "intelligent coding tool".
+The nature of three-tier architecture makes it difficult to use just one specialized tool. So tooling is limited and I want to use namespaces to make code searchable through every tier. Search-all-and-replace will be most of my "intelligent coding tool".
 
 ## Namespaces
 
