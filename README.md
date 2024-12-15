@@ -60,7 +60,7 @@ letters in between are for future use
 - z - webpage hit counter
     the first project on top of the framework
 
-## A - development tools, infrastructure
+## a - development tools, infrastructure
 
 Namespaces with 2 and 3 letters. This list will grow eventually.
 
@@ -92,7 +92,11 @@ ac - postgres database
 
 ad - Rust language
 
-- adj - Rust editor
+- ada - Rust language
+- adb - cargo crate dependencies
+- adc - cross platform compiling
+- add - development container crustde
+- adj - VSCode as Rust editor
 
 af - AXUM web server
 
@@ -113,10 +117,16 @@ bj - server core (common code)
 
 bs - client core (common code)
 
-## C - configuration, migration, update
+## c - configuration, migration, update
 
-Every project evolves and the code and the database need to be updated. Sometimes it is called "migration".
-Here we need backup and restore and we need Development, Testing and Production environment.
+Every project evolves and the code and the database need to be updated. Sometimes it is called "migration". Living with a database is very dynamic. Much more than just living with a program.
+
+The same database can contain more than one project coded by different teams. The order of changes must not be linear. It means, that the team must know what projects are exclusively theirs and what projects are common and must be coordinated with other teams.
+When writing the code it must be always careful, that it does not break when a new field is added.
+
+To achieve integrity of the database all the code is concentrated inside the database. So other parts of the project can use common code.
+
+Here we need backup and restore and we need Development, Testing and Production environments.
 
 ca - tables, fields, relations, views, procedures, configuration
 
