@@ -43,103 +43,22 @@ I hope that the character "_" underscore is available everywhere. The names will
 
 This project is way too complex that I would like it to be. But I must bite this sour apple. I cannot work on anything simple until I have this moderately complex framework. Things will be getting easier after finishing the framework.
 
-I will try to split the project into many modules. Ideally the modules are layered in levels. The higher level module can have dependency on lower modules, but it is forbidden to depend in the other direction. This rule will sometimes complicate things, but the resulting code will be reasonably maintainable.
+I will try to split the project into many modules. Ideally the modules are layered in levels. The higher level module can have dependency on lower modules, but it is forbidden to depend in the opposite direction. This rule will sometimes complicate things, but the resulting code will be reasonably maintainable.
 
 I hope I will not mess this up, because later it will be impossible to change the names and namespaces.
 
 I think a three latter namespace is good for my use-case.
 The first letter defines a big project, that is not dependent of what comes after it.
 
-- a - development tools, infrastructure
-- b - common code for the framework
-- c - configuration, migration, updates
-- d - authentication and authorization
+- [a - development tools, infrastructure](https://github.com/liporuwcha/a_development_tools_infrastructure)
+- [b - common code for the framework](https://github.com/liporuwcha/b_common_code_for_the_framework)
+- [c - configuration, migration, updates](https://github.com/liporuwcha/c_configuration_migration_updates)
+- [d - authentication and authorization](https://github.com/liporuwcha/d_authentication_and_authorization)
 
 letters in between are for future use
 
 - z - webpage hit counter
     the first project on top of the framework
-
-## a - development tools, infrastructure
-
-Namespaces with 2 and 3 letters. This list will grow eventually.
-
-aa - operating systems
-
-- aaa - Linux
-- aab - Windows
-- aac - WSL on Windows
-- aad - android
-- aae - MacOS and iOS
-
-ab - networks
-
-- aba - tcp/ip
-- abb - web http request-response
-- abc - websockets
-- abd - http2
-- abe - http3
-- abf - server side events
-
-ac - postgres database
-
-- aca - database servers
-- acb - database config
-- acc - tables, fields, indexes
-- acd - views, procedures, functions,...
-- ace - administrative tools inside the database
-- acj - database editor
-
-ad - Rust language
-
-- ada - Rust language
-- adb - cargo crate dependencies
-- adc - cross platform compiling
-- add - development container crustde
-- adj - VSCode as Rust editor
-
-af - AXUM web server
-
-ai - SSR server side rendering
-
-aj - client side rendering
-
-ak - WASM, javascript
-
-## b - common code for the framework
-
-With this namespace I will have a working framework that works with database, server and client.
-But without any content. It is the basis for later content.
-
-ba - database core (common code)
-
-bj - server core (common code)
-
-bs - client core (common code)
-
-## c - configuration, migration, update
-
-Every project evolves and the code and the database need to be updated. Sometimes it is called "migration". Living with a database is very dynamic. Much more than just living with a program.
-
-The same database can contain more than one project coded by different teams. The order of changes must not be linear. It means, that the team must know what projects are exclusively theirs and what projects are common and must be coordinated with other teams.
-When writing the code it must be always careful, that it does not break when a new field is added.
-
-To achieve integrity of the database all the code is concentrated inside the database. So other parts of the project can use common code.
-
-Here we need backup and restore and we need Development, Testing and Production environments.
-
-ca - tables, fields, relations, views, procedures, configuration
-
-cj - migration:  
-how to migrate every table separately. Ideally without server downtime.
-
-## d - authentication and authorization
-
-Nothing serious cannot be done without authentication and authorization.
-
-da - authentication
-
-dj - authorization
 
 ## Open-source and free as a beer
 
