@@ -7,7 +7,7 @@
  ![rustlang](https://img.shields.io/badge/rustlang-orange)
  ![postgres](https://img.shields.io/badge/postgres-orange)
 
- ![logo](https://raw.githubusercontent.com/liporuwcha/liporuwcha/main/images/logo/logo_liporuwcha.png)
+ ![logo](https://raw.githubusercontent.com/liporuwcha/liporuwcha/images/logo/logo_liporuwcha.png)
  liporuwcha is a "GitHub organization" that groups [multiple repositories](https://github.com/orgs/liporuwcha/repositories?q=sort%3Aname-asc) together
 
  [![Lines in md](https://img.shields.io/badge/Lines_in_markdown-83-green.svg)](https://github.com/liporuwcha/liporuwcha/)
