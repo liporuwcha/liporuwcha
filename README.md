@@ -37,6 +37,8 @@ I choose the strange unique name **"liporuwcha"** for this project. It does not 
 
 The nature of three-tier architecture makes it difficult to use just one specialized tool. So tooling is limited and I want to use namespaces to make code searchable through every tier. Search-all-and-replace will be most of my "intelligent coding tool".
 
+I hope that the character "_" underscore is available everywhere. The names will use the snake case style like `abc_what_a_nice_name`. I choose that to avoid problems with case sensitive and not case sensitive languages and technologies.
+
 ## Namespaces
 
 This project is way too complex that I would like it to be. But I must bite this sour apple. I cannot work on anything simple until I have this moderately complex framework. Things will be getting easier after finishing the framework.
@@ -48,15 +50,86 @@ I hope I will not mess this up, because later it will be impossible to change th
 I think a three latter namespace is good for my use-case.
 The first letter defines a big project, that is not dependent of what comes after it.
 
-- A - development tools, infrastructure
-- B - common code for the framework
-- C - configuration, migration, updates
-- D - authentication and authorization
+- a - development tools, infrastructure
+- b - common code for the framework
+- c - configuration, migration, updates
+- d - authentication and authorization
 
 letters in between are for future use
 
-- Z - webpage hit counter
+- z - webpage hit counter
     the first project on top of the framework
+
+## A - development tools, infrastructure
+
+Namespaces with 2 and 3 letters. This list will grow eventually.
+
+aa - operating systems
+
+- aaa - Linux
+- aab - Windows
+- aac - WSL on Windows
+- aad - android
+- aae - MacOS and iOS
+
+ab - networks
+
+- aba - tcp/ip
+- abb - web http request-response
+- abc - websockets
+- abd - http2
+- abe - http3
+- abf - server side events
+
+ac - postgres database
+
+- aca - database servers
+- acb - database config
+- acc - tables, fields, indexes
+- acd - views, procedures, functions,...
+- ace - administrative tools inside the database
+- acj - database editor
+
+ad - Rust language
+
+- adj - Rust editor
+
+af - AXUM web server
+
+ai - SSR server side rendering
+
+aj - client side rendering
+
+ak - WASM, javascript
+
+## b - common code for the framework
+
+With this namespace I will have a working framework that works with database, server and client.
+But without any content. It is the basis for later content.
+
+ba - database core (common code)
+
+bj - server core (common code)
+
+bs - client core (common code)
+
+## C - configuration, migration, update
+
+Every project evolves and the code and the database need to be updated. Sometimes it is called "migration".
+Here we need backup and restore and we need Development, Testing and Production environment.
+
+ca - tables, fields, relations, views, procedures, configuration
+
+cj - migration:  
+how to migrate every table separately. Ideally without server downtime.
+
+## d - authentication and authorization
+
+Nothing serious cannot be done without authentication and authorization.
+
+da - authentication
+
+dj - authorization
 
 ## Open-source and free as a beer
 
