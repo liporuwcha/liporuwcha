@@ -11,7 +11,7 @@
  liporuwcha is a "GitHub organization" that groups [multiple repositories](https://github.com/orgs/liporuwcha/repositories?q=sort%3Aname-asc) together
 
  [![Lines in md](https://img.shields.io/badge/Lines_in_markdown-0-green.svg)](https://github.com/liporuwcha/liporuwcha/)
- ![liporuwcha](https://bestia.dev/webpage_hit_counter/get_svg_image/000.svg)
+ ![liporuwcha](https://bestia.dev/webpage_hit_counter/get_svg_image/1731687223.svg)
 
 ## Motivation
 
