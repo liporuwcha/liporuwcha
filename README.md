@@ -69,24 +69,24 @@ letters in between are for future use
 top to bottom direction
 skinparam componentstyle rectangle
 
-folder "d_authentication_and_authorization"{
+folder "d - authentication and authorization" as d {
 [da - authentication]
 [db - authorization]
 }
 
-folder "c - configuration, migration, updates" {
+folder "c - configuration, migration, updates" as c {
   [ca - database objects]
   [cj - migration]
   
 }
 
-folder "b - core (common code)" {
+folder "b - core (common code)" as b {
   [bd - database core (common code)]
   [bj - server core (common code)]
   [bs - client core (common code)]
 }
 
-folder "a - development tools, infrastructure" {
+folder "a - development tools, infrastructure" as a {
   [aa - operating systems]
   [ab - networks]
   [ad - postgres database]
@@ -97,9 +97,9 @@ folder "a - development tools, infrastructure" {
   [aw - WASM/Webassembly, javascript]
 }
 
-"d_authentication_and_authorization" -d-> "c - configuration, migration, updates"
-"c - configuration, migration, updates" -d-> "b - core (common code)"
-"b - core (common code)" -d-> "a - development tools, infrastructure"
+d -d-> c
+c -d-> b
+b -d-> a
 
 @enduml
 ```
