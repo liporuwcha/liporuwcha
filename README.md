@@ -57,6 +57,55 @@ letters in between are for future use
 - z - webpage hit counter
     the first project on top of the framework
 
+## PlantUML diagram
+
+![lip_plantuml_diagram](images/lip_plantuml_diagram.png)
+
+<details>
+  <summary>plantuml code</summary>
+
+```PlantUML
+@startuml
+top to bottom direction
+skinparam componentstyle rectangle
+
+folder "d_authentication_and_authorization"{
+[da - authentication]
+[db - authorization]
+}
+
+folder "c - configuration, migration, updates" {
+  [ca - database objects]
+  [cj - migration]
+  
+}
+
+folder "b - core (common code)" {
+  [bd - database core (common code)]
+  [bj - server core (common code)]
+  [bs - client core (common code)]
+}
+
+folder "a - development tools, infrastructure" {
+  [aa - operating systems]
+  [ab - networks]
+  [ad - postgres database]
+  [ar - Rust language]
+  [ax - AXUM web server]
+  [as - SSR server side rendering]
+  [al - client side rendering]
+  [aw - WASM/Webassembly, javascript]
+}
+
+"d_authentication_and_authorization" -d-> "c - configuration, migration, updates"
+"c - configuration, migration, updates" -d-> "b - core (common code)"
+"b - core (common code)" -d-> "a - development tools, infrastructure"
+
+@enduml
+```
+
+</details>
+
 ## Open-source and free as a beer
 
 My open-source projects are free as a beer (MIT license).  
