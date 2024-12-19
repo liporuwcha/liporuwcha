@@ -44,7 +44,7 @@ I will try to split the project into many modules. Ideally the modules are layer
 
 I hope I will not mess this up, because later it will be impossible to change the names and namespaces.
 
-I think a three latter namespace is good for my use-case.
+I think a `three latter namespace` is good for my use-case.
 The first letter defines a big project, that is not dependent of what comes after it.
 
 - [a___ development tools, infrastructure](https://github.com/liporuwcha/a___development_tools_infrastructure)
@@ -54,7 +54,7 @@ The first letter defines a big project, that is not dependent of what comes afte
 
 letters in between are for future use
 
-- z - webpage hit counter
+- z___ - webpage hit counter
     the first project on top of the framework
 
 ## PlantUML diagram
