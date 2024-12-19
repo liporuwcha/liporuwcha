@@ -47,10 +47,10 @@ I hope I will not mess this up, because later it will be impossible to change th
 I think a three latter namespace is good for my use-case.
 The first letter defines a big project, that is not dependent of what comes after it.
 
-- [a - development tools, infrastructure](https://github.com/liporuwcha/a_development_tools_infrastructure)
-- [b - common code for the framework](https://github.com/liporuwcha/b_common_code_for_the_framework)
-- [c - configuration, migration, updates](https://github.com/liporuwcha/c_configuration_migration_updates)
-- [d - authentication and authorization](https://github.com/liporuwcha/d_authentication_and_authorization)
+- [a___ development tools, infrastructure](https://github.com/liporuwcha/a___development_tools_infrastructure)
+- [b___ common code for the framework](https://github.com/liporuwcha/b___common_code_for_the_framework)
+- [c___ configuration, migration, updates](https://github.com/liporuwcha/c___configuration_migration_updates)
+- [d___ authentication and authorization](https://github.com/liporuwcha/d___authentication_and_authorization)
 
 letters in between are for future use
 
@@ -69,32 +69,32 @@ letters in between are for future use
 top to bottom direction
 skinparam componentstyle rectangle
 
-folder "d - authentication and authorization" as d {
-[da - authentication]
-[db - authorization]
+folder "d___ authentication and authorization" as d {
+[da__ authentication]
+[db__ authorization]
 }
 
-folder "c - configuration, migration, updates" as c {
-  [ca - database objects]
-  [cj - migration]
+folder "c___ configuration, migration, updates" as c {
+  [ca__ database objects]
+  [cj__ migration]
   
 }
 
-folder "b - core (common code)" as b {
-  [bd - database core (common code)]
-  [bj - server core (common code)]
-  [bs - client core (common code)]
+folder "b___ core (common code)" as b {
+  [bd__ database core (common code)]
+  [bj__ server core (common code)]
+  [bs__ client core (common code)]
 }
 
-folder "a - development tools, infrastructure" as a {
-  [aa - operating systems]
-  [ab - networks]
-  [ad - postgres database]
-  [ar - Rust language]
-  [ax - AXUM web server]
-  [as - SSR server side rendering]
-  [al - client side rendering]
-  [aw - WASM/Webassembly, javascript]
+folder "a___ development tools, infrastructure" as a {
+  [aa__ operating systems]
+  [ab__ networks]
+  [ad__ postgres database]
+  [ar__ Rust language]
+  [ax__ AXUM web server]
+  [as__ SSR server side rendering]
+  [al__ client side rendering]
+  [aw__ WASM/Webassembly, javascript]
 }
 
 d -d-> c
